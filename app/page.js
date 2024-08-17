@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
        <Hero />
-       <main className="md:px-36 px-6 md:mt-12 flex flex-col md:gap-12">
+       <main className="md:px-36 px-6 md:mt-12 flex flex-col md:gap-12  " >
          <div className="text-center">
          <h2 className="md:text-[48px] font-medium leading-[64px] ">Crafted Care Services for Your Needs</h2>
          <p className="md:text-[20px]">Personalized to Perfection, Delivered with Compassion.</p>
