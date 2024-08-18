@@ -32,7 +32,7 @@ export const Navbar = ({ showDrops }) => {
   return (
     <div>
 
-      <div className="flex  bg-[#F5FEFF] w-full md:px-12  px-6 justify-between items-center fixed z-[9999] top-0 py-5 text-sm">
+      <div className="flex  bg-[#F5FEFF] w-full md:px-[80px]  px-6 justify-between items-center fixed z-[9999] top-0 py-2 text-sm">
         {/* left side */}
         <section>
           <Link href="/" className="max-w-28 ">
@@ -63,7 +63,7 @@ export const Navbar = ({ showDrops }) => {
                     initial="hidden"
                     animate="visible"
                     variants={variants}
-                    className="absolute   right-1  top-12 hidden w-auto  flex-col gap-1    rounded-lg bg-gray-100 p-4 border-[1px] border-gray-300 shadow-md  transition-all group-hover:flex "
+                    className="absolute   right-1  top-12 hidden w-auto  flex-col gap-1    rounded-lg bg-[#FCFCFC] p-4 border-[1px] border-gray-300 shadow-md  transition-all group-hover:flex "
                   >
                     {d.children.map((ch, i) => (
                       <Link

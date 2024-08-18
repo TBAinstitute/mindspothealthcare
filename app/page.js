@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
        <Hero />
-       <main className="md:px-36 px-6 md:mt-12 flex flex-col md:gap-12  " >
+       <main className="md:px-[80px] px-6 md:mt-12 flex flex-col md:gap-12 bg-gradient-to-r from-white via-[#E5FBFF] to-white md:py-[64px] py-6 " >
          <div className="text-center">
          <h2 className="md:text-[48px] font-medium leading-[64px] ">Crafted Care Services for Your Needs</h2>
          <p className="md:text-[20px]">Personalized to Perfection, Delivered with Compassion.</p>
@@ -57,7 +57,7 @@ export default function Home() {
        </main>
        {/* section three */}
        <main className="mt-12 bg-red-950">
-        <div className="md:p-12 p-6 flex md:flex-row flex-col gap-12">
+        <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col gap-12">
               <section className="md:w-1/2 w-full md:pr-12">
                 <h2 className="text-[16px] font-medium text-secondary">Excellent Service</h2>
                 <p className="md:text-[48px] leading-[64px] font-medium text-white">
@@ -85,8 +85,8 @@ export default function Home() {
         </div>
        </main>
        {/* section Four */}
-       <main className="mt-12 ">
-        <div className="md:p-12 p-6 flex md:flex-row flex-col md:gap-12 gap-6">
+       <main className="mt-12 bg-gradient-to-r from-white via-lightOrange to-white ">
+        <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col md:gap-12 gap-6">
               <section className="md:w-1/2 w-full ">
                  <Image src={img1} alt="image" className="w-full h-[500px]" />
               </section>

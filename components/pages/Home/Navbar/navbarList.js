@@ -1,11 +1,11 @@
 export const navList = [
     {
       label: "About Us",
-      link: "#",
+      link: "/about-us",
       children: [
         {
           label: "About MindSpot",
-          link: "/",
+          link: "/about-us",
         },
         {
           label: "Our Mission",
