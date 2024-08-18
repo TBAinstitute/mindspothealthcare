@@ -51,7 +51,7 @@ export const Navbar = ({ showDrops }) => {
                 className="relative group  px-2 py-3 transition-all "
               >
                 <p className="flex cursor-pointer items-center gap-2 text-primary font-medium hover:bg-[#E5FBFF] transition-all p-2 rounded-md  text-[16px] group-hover:text-primary ">
-                  <span>{d.label}</span>
+                  <Link href={d.link}>{d.label}</Link>
                   {d.children && (
                     <IoIosArrowDown className=" rotate-180  transition-all group-hover:rotate-0" />
                   )}

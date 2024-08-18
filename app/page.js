@@ -51,7 +51,7 @@ export default function Home() {
               ))}
          </div>
               <div className="flex justify-center items-center md:gap-12 gap-6 ">
-                    <PrimaryButton label={'Schedule an Appointment'} link="/" color="bg-primary" />
+                    <PrimaryButton label={'Schedule an Appointment'} link="https://teams.microsoft.com/l/message/19:4c4c24ea-8525-437b-b085-76b8e553a73a_900899a4-2dcc-4d51-a53b-64ddb0891390@unq.gbl.spaces/1723908544928?context=%7B%22contextType%22%3A%22chat%22%7D" color="bg-primary" />
                     <Link href="/" className="underline text-secondary text-[24px] leading-[32px]">See all Services</Link>
               </div>
        </main>

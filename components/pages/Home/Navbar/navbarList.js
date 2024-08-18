@@ -58,7 +58,7 @@ export const navList = [
     },
     {
       label: "Career",
-      link: "/career",
+      link: "/careers",
      
     },
   ];

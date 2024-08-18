@@ -23,6 +23,16 @@
 .faq-answer {
   margin-top: 5px;
 }
+.service {
+  background: url("/image/overlay.png") no-repeat center
+    center / cover;
+  position: relative;
+}
+
+
+.service .overlay {
+  background-color: rgba(15, 18, 46, 0.7);
+}
 
 @layer utilities {
   .text-balance {
