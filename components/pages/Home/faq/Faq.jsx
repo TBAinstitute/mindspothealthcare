@@ -54,15 +54,15 @@ const FAQ = () => {
   return (
     <div className="w-full">
       {faqData.map((faq, index) => (
-        <div key={index} className="mb-10">
-        <div onClick={() => handleToggle(index)} className='flex items-center justify-between' >
-        <h3 className="md:text-[24px] font-medium leading-[32px] text-neutral">
+        <div key={index} className="mb-14">
+        <div onClick={() => handleToggle(index)} className='flex  items-center justify-between' >
+        <h3 className="text-center md:text-[24px] font-medium leading-[32px] text-neutral w-full">
             {faq.question}
         </h3>
         <Image src={addIcon}  alt='faq-icon'/>
         </div>
           {activeIndex === index && (
-            <p className="faq-answer">
+            <p className="faq-answer text-center">
               {faq.answer}
             </p>
           )}

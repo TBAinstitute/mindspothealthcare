@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { navList } from "./navbarList";
 import Image from "next/image";
+import { PrimaryButton } from "@/components/PrimaryButton";
 
 export const Navbar = ({ showDrops }) => {
   const [animationParent] = useAutoAnimate();
@@ -87,9 +88,9 @@ export const Navbar = ({ showDrops }) => {
         </section>
         {/* right side data */}
         <section className=" hidden md:hidden lg:flex  ">
-          <button className=" rounded-lg px-[24px] py-[10px] bg-primary text-[#fff] transition-all ">
-          Book an Appointment
-          </button>
+          <div className=" rounded-lg px-[23px] py-[5px] bg-primary text-[#fff] transition-all " >
+            <PrimaryButton link={"https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22"} label={"Book an Appointment"} color="bg-primary"/>
+          </div>
           
         </section>
 
