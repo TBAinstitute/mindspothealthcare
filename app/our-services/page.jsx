@@ -44,10 +44,10 @@ export default function () {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <main className="flex flex-col gap-12">
+    <main className="flex flex-col gap-6">
       <main className="md:h-screen ">
         <div className="h-full  flex justify-center items-center ">
-          <div className="flex flex-col bg-light md:px-[80px] md:py-[64px] pt-[7rem]  p-6 w-full ">
+          <div className="flex flex-col bg-light md:px-[80px] md:py-[80px] pt-[8rem]  p-6 w-full ">
             <h2 className="md:w-[65%] w-full md:text-[56px] text-[24px] text-[#2C2929] md:leading-[72px] font-semibold ">
               Caring with compassion, your way.
             </h2>
@@ -64,7 +64,7 @@ export default function () {
 
       {/* section two */}
       <main className="bg-white">
-        <div className="flex flex-col gap-6 text-dark md:px-[80px] px-6 md:py-[64px] py-6 ">
+        <div className="flex flex-col gap-6 text-dark md:px-[80px] px-6 md:pb-[64px] py-6 ">
           <section className="flex w-full flex-col justify-center items-center">
             <h1 className="text[24px] leading-[32px] text-secondary">
               Our Values
@@ -107,7 +107,7 @@ export default function () {
            <h2>Our Service Category</h2>
            <p>Explore our budget friendly Service Category to find your best fit.</p>
            <div className="grid md:grid-cols-2 pt-6 grid-cols-1 md:gap-12 gap-6">
-                <div className="flex flex-col px-[24px] py-[16px] gap-6 border-[1px] border-secondary bg-[#FCFCFC] text-[#003740] rounded-lg">
+                <div className="flex flex-col px-[24px] py-6 gap-6 border-[1px] border-secondary bg-[#FCFCFC] text-[#003740] rounded-lg">
                     <h2 className="font-medium md:text-[48px] text-[24px] md:leading-[64px]">Live-In Care</h2>
                     <p className="text-[#443F3F] md:text-[18px]  ">
                     Mindspot Health Care Services offers round the clock monitoring and care, we offer 24 hours a day, 7 days a week Live-In care. 
@@ -118,7 +118,7 @@ export default function () {
                     </p>
                     <PrimaryButton label={'Schedule an Appointment'} color={'bg-primary'} link={'/'} />
                 </div>
-                <div className="flex flex-col px-[24px] py-[16px] md:justify-between md:gap-0 gap-6 border-[1px] border-secondary bg-[#FCFCFC] text-[#003740] rounded-lg">
+                <div className="flex flex-col px-[24px] py-6 md:justify-between md:gap-0 gap-6 border-[1px] border-secondary bg-[#FCFCFC] text-[#003740] rounded-lg">
                     <h2 className="font-medium md:text-[48px] text-[24px] md:leading-[64px]">Hourly Care</h2>
                     <p className="text-[#443F3F] md:text-[18px]  ">
                     Our hourly care ranges from 4 to 24 hours per day. 

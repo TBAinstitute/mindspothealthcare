@@ -3,6 +3,7 @@ import { PrimaryButton } from "@/components/PrimaryButton";
 import Link from "next/link";
 import Image from "next/image";
 import img1 from "@/public/image/patient1.png"
+import arrowIcon from "@/public/image/arrowIcon.svg"
 import FAQ from "@/components/pages/Home/faq/Faq";
 import { CommingSoon } from "@/components/pages/Home/comming-soon/CommingSoon";
 export default function Home() {
@@ -41,11 +42,11 @@ export default function Home() {
          <h2 className="md:text-[48px] font-medium leading-[64px] ">Crafted Care Services for Your Needs</h2>
          <p className="md:text-[20px]">Personalized to Perfection, Delivered with Compassion.</p>
          </div>
-         <div className="grid md:grid-cols-3 gap-12">
+         <div className="grid md:grid-cols-3 gap-24">
               {service.map((item) => (
-                <div key={item.id} className="bg-white border-[1px] p-4 rounded-md shadow-md flex flex-col gap-12 ">
+                <div key={item.id} className="bg-white border-[1px] p-6 rounded-md shadow-md flex flex-col gap-12 ">
                       <h2 className="text-[24px] font-medium leading-[32px] pr-12 ">{item.title} </h2>
-                      <button className="border-none bg-white text-[#736D6D] text-[14px] text-start">See more</button>
+                      <button className="border-none bg-white text-[#736D6D] text-[14px] text-start flex items-center">See more <Image src={arrowIcon} alt="see-more" /></button>
 
                 </div>
               ))}
@@ -56,10 +57,10 @@ export default function Home() {
               </div>
        </main>
        {/* section three */}
-       <main className="mt-12 bg-red-950">
-        <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col gap-12">
+       <main className="mt-12 service bg-red-950">
+        <div className="md:px-[80px] overlay md:py-[64px] p-6 flex md:flex-row flex-col gap-12">
               <section className="md:w-1/2 w-full md:pr-12">
-                <h2 className="text-[16px] font-medium text-secondary">Excellent Service</h2>
+                <h2 className="text-[16px] font-medium text-[#00B9BD]">Excellent Service</h2>
                 <p className="md:text-[48px] leading-[64px] font-medium text-white">
                 Providing Outstanding Care Programs as a Licensed and Insured Provider in Maryland
                 </p>
@@ -86,7 +87,7 @@ export default function Home() {
        </main>
        {/* section Four */}
        <main className="mt-12 bg-gradient-to-r from-white via-lightOrange to-white ">
-        <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col md:gap-12 gap-6">
+        <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col md:gap-24 gap-6">
               <section className="md:w-1/2 w-full ">
                  <Image src={img1} alt="image" className="w-full h-[500px]" />
               </section>
@@ -111,7 +112,7 @@ export default function Home() {
        </main>
        {/* section five */}
        <main className="mt-12 p-6">
-        <div className=" flex md:flex-row flex-col md:gap-12 gap-6 bg-primary rounded-lg">
+        <div className=" flex md:flex-row flex-col md:gap-12 gap-6 bg-primary rounded-[15px]">
                 <section className="md:w-1/2 w-full flex flex-col gap-6 justify-center items-center p-12 border-[1px] border-r-white  text-[#E5E5E5]">
                     <h2 className="text-[#FCFCFC] text-[56px] font-semibold leading-[72px]">Why Choose Us</h2>
                     <div>

@@ -86,7 +86,7 @@ const RandomImageSlider = () => {
   }, [nextImage]);
 
   return (
-    <div className="relative w-full h-[650px] flex justify-center items-center overflow-hidden">
+    <div className="relative w-full h-full flex justify-center items-center overflow-hidden">
       {/* Current Image */}
       <div
         className={`absolute inset-0 flex justify-center items-center transition-opacity duration-1000 ease-in-out ${
@@ -96,7 +96,7 @@ const RandomImageSlider = () => {
         <Image
           src={images[currentImage]}
           alt="Random"
-          className="rounded-lg"
+          className="rounded-lg h-full"
           style={{ height: "650px" }}
         />
       </div>
@@ -111,7 +111,7 @@ const RandomImageSlider = () => {
           <Image
             src={images[nextImage]}
             alt="Random"
-            className="rounded-lg"
+            className="rounded-lg h-full"
             style={{ height: "650px" }}
           />
         </div>

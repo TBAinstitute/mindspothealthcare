@@ -12,10 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="inter">
-        <div className="flex flex-col">
-            <div><Navbar /></div>
-            <div>{children}</div>
-            <div><Footer /></div>
+        <div className="flex flex-col h-screen">
+          <div><Navbar /></div>
+          <div>{children}</div>
+          <div><Footer /></div>
         </div>
       </body>
     </html>
