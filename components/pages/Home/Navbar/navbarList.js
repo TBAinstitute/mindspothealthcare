@@ -47,7 +47,7 @@ export const navList = [
         },
         {
           label: "Client Satisfaction Survey ",
-          link: "/",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLScaTC28NIXPOo5XBaZRMKrB0LlBiQXK8RNCg2bFe4ZJw9jCcA/viewform?embedded=true%22",
         },
 
       ],
