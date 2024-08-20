@@ -72,6 +72,7 @@ export default function AboutUs() {
                 src={AboutImg}
                 alt="about-image"
                 className=" md:max-h-[300px] w-full h-auto"
+                
               />
               <p className="md:text-[18px] text-[#443F3F]">
                 Our services, approved by the Maryland Department of Mental
