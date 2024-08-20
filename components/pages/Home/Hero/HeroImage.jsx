@@ -97,7 +97,7 @@ const RandomImageSlider = () => {
           src={images[currentImage]}
           alt="Random"
           className="rounded-lg"
-          style={{ height: "650px" }}
+          style={{ height: "650px", width: "650px" }}
         />
       </div>
 
@@ -112,7 +112,7 @@ const RandomImageSlider = () => {
             src={images[nextImage]}
             alt="Random"
             className="rounded-lg"
-            style={{ height: "650px" }}
+            style={{ height: "650px", width: "650px" }}
           />
         </div>
       )}

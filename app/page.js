@@ -90,7 +90,7 @@ export default function Home() {
        <main className="mt-12 bg-gradient-to-r from-white via-lightOrange to-white ">
         <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col md:gap-12 gap-6">
               <section className="md:w-1/2 w-full ">
-                 <Image src={img1} alt="image" className="w-full h-[500px]" />
+                 <Image src={img1} alt="image" className=" h-[500px]" />
               </section>
               <section className="md:w-1/2  w-full flex flex-col justify-between text-neutral">
               <h1 className="text-[16px] font-medium leading-[28px] text-primary">Dedicated Service</h1>
