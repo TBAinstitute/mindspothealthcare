@@ -78,13 +78,13 @@ export default function Home() {
        <Hero />
        <main className="md:px-[80px] px-6 md:mt-12 flex flex-col md:gap-12 bg-gradient-to-r from-white via-[#E5FBFF] to-white md:py-[64px] py-6 " >
          <div className="text-center">
-         <h2 className="md:text-[48px] font-medium leading-[64px] ">Crafted Care Services for Your Needs</h2>
+         <h2 className="md:text-[48px] font-medium leading-[64px] font-custom ">Crafted Care Services for Your Needs</h2>
          <p className="md:text-[20px]">Personalized to Perfection, Delivered with Compassion.</p>
          </div>
          <div className="grid md:grid-cols-3 gap-24">
               {service.map((item) => (
                 <div key={item.id} className="bg-white border-[1px] p-6 rounded-md shadow-md flex flex-col gap-12 ">
-                      <h2 className="text-[24px] font-medium leading-[32px] pr-12 ">{item.title} </h2>
+                      <h2 className="text-[24px] font-medium leading-[32px] pr-12 font-custom ">{item.title} </h2>
                       <button className="border-none bg-white text-[#736D6D] text-[14px] text-start flex items-center">See more <Image src={arrowIcon} alt="see-more" /></button>
 
                 </div>
@@ -100,7 +100,7 @@ export default function Home() {
         <div className="md:px-[80px] overlay md:py-[80px] p-6 flex md:flex-row flex-col gap-12">
               <section className="md:w-1/2 w-full md:pr-12">
                 <h2 className="text-[16px] font-medium text-[#00B9BD]">Excellent Service</h2>
-                <p className="md:text-[48px] leading-[64px] font-medium text-white">
+                <p className="md:text-[48px] leading-[64px] font-medium text-white font-custom">
                 Providing Outstanding Care Programs as a Licensed and Insured Provider in Maryland
                 </p>
               </section>
@@ -110,16 +110,16 @@ export default function Home() {
                 </p>
                 <div className="w-full flex  justify-between md:gap-12 gap-6 text-white">
                     <section className="flex-col flex gap-6">
-                        <h2 className="md:text-[24px] font-medium">Licensed Provider</h2>
+                        <h2 className="md:text-[24px] font-medium font-custom">Licensed Provider</h2>
                         <p className="md:text-[14px]">We are licensed by the State of Maryland and insured, ensuring the highest quality care.</p>
                     </section>
                     <section className="flex-col flex gap-6">
-                        <h2 className="md:text-[24px] font-medium">Insured Provider</h2>
+                        <h2 className="md:text-[24px] font-medium font-custom">Insured Provider</h2>
                         <p className="md:text-[14px]">As an insured provider, we prioritize the safety and well-being of our clients.</p>
                     </section>
                 </div>
                 <div className="flex" >
-                  <div className="px-[40px] py-[14px] bg-secondary rounded-lg border-none">
+                  <div className="px-[80px] py-[8px] bg-secondary rounded-lg border-none">
                     <PrimaryButton link={"https://docs.google.com/forms/d/e/1FAIpQLSdd3cCZ1p4Kkq-njTKk76rY04y0JCDtFTZk20oWEALF8B568g/viewform?embedded=true%22"} label={"Contact Us"} />
                     </div>
                 </div>
@@ -134,7 +134,7 @@ export default function Home() {
               </section>
               <section className="md:w-1/2  w-full flex flex-col justify-between text-neutral">
               <h1 className="text-[16px] font-medium leading-[28px] text-primary">Dedicated Service</h1>
-              <h2 className="text-[48px] leading-[64px] font-medium">Our Commitment to Equal Opportunity and Inclusive Care</h2>
+              <h2 className="text-[48px] leading-[64px] font-medium font-custom">Our Commitment to Equal Opportunity and Inclusive Care</h2>
                 <p className="text-[16px] ">
                 At Mindspot Health Care Services, we are dedicated to providing exceptional care to all individuals, regardless of their race, age, ethnic background, sexual orientation, religion, or national origin. We believe in equal opportunity and strive to create an inclusive environment where everyone feels valued and respected.
                 </p>
@@ -154,24 +154,26 @@ export default function Home() {
        {/* section five */}
        <main className="mt-12 p-6">
         <div className=" flex md:flex-row flex-col md:gap-12 gap-6 bg-primary rounded-[15px]">
-                <section className="md:w-1/2 w-full flex flex-col gap-6 justify-center items-center p-12 border-[1px] border-r-white  text-[#E5E5E5]">
-                    <h2 className="text-[#FCFCFC] text-[56px] font-semibold leading-[72px]">Why Choose Us</h2>
+                <section className="md:w-1/2 w-full flex flex-col gap-6 text-center px-8 py-12 border-[1px] border-r-white  text-[#E5E5E5]">
+                    <h2 className="text-[#FCFCFC] text-[56px] font-semibold leading-[72px] font-custom">Why Choose Us</h2>
                     <div>
-                    <p className="md:text-[40px] leading-[56px] font-medium ">Choose Us Because of Our </p>
-                    <p className="md:text-[40px] leading-[56px] font-medium text-center">People! </p>
+                    <p className="md:text-[40px] leading-[56px] font-medium font-custom ">Choose Us Because of Our People! </p>
                     </div>
                     
                     <p className="text-[16px] leading-[24px]">The dedicated team at Mindspot Health Care Services is committed to ensuring your complete satisfaction. Our caregivers not only provide the comfort you need but also enrich your life and the lives of your loved ones.</p>
-                    <PrimaryButton label="Find out more About Us" link="/" color="bg-secondary" />
-                </section>
-                <section className="md:w-1/2 w-full flex flex-col gap-6 justify-center items-center p-12 text-[#E5E5E5]">
-                    <h2 className="text-[#FCFCFC] text-[56px] font-semibold leading-[72px]">Join Our Team</h2>
-                    <div>
-                    <p className="md:text-[40px] leading-[56px] font-medium ">The future of in-home care </p>
-                    <p className="md:text-[40px] leading-[56px] font-medium text-center">starts with you. </p>
+                    <div className="flex justify-center items-center">
+                    <div className="w-fit"><PrimaryButton label="Find out more About Us" link="/" color="bg-secondary" /></div>
                     </div>
-                    <p className="text-[16px] leading-[24px]">Mindspot Health Care Services is always looking for new people to hire  <br className="text-center" /> in our team. Would you like to be part of our company? Send your application online.</p>
-                    <PrimaryButton label="Explore the Career options" link="https://forms.gle/e9Y2AguecvuEixDb8" color="bg-secondary" />
+                </section>
+                <section className="md:w-1/2 w-full flex flex-col gap-6 text-center px-8 py-12 text-[#E5E5E5]">
+                    <h2 className="text-[#FCFCFC] text-[56px] font-semibold leading-[72px] font-custom">Join Our Team</h2>
+                    <div>
+                    <p className="md:text-[40px] leading-[56px] font-medium font-custom ">The future of in-home care starts with you. </p>
+                    </div>
+                    <p className="text-[16px] leading-[24px] ">Mindspot Health Care Services is always looking for new people to hire in our team. Would you like to be part of our company? Send your application online.</p>
+                    <div className="flex justify-center items-center ">
+                    <div className="w-fit"><PrimaryButton label="Explore the Career options" link="https://forms.gle/e9Y2AguecvuEixDb8" color="bg-secondary" /></div>
+                    </div>
                 </section>
         </div>
        </main>
@@ -185,7 +187,7 @@ export default function Home() {
        {/* faq */}
        <main>
         <div className="flex flex-col md:gap-6 gap-6 md:p-24 p-6">
-          <h2 className="text-center md:text-[56px] text-[32px] leading-[72px] font-semibold text-neutral">Frequently Asked Questions</h2>
+          <h2 className="text-center md:text-[56px] text-[32px] leading-[72px] font-semibold text-neutral font-custom">Frequently Asked Questions</h2>
           <FAQ />
         </div>
        </main>

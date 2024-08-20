@@ -48,7 +48,7 @@ const HorizontalScroll = ({ items }) => {
       <div className="flex flex-col pl-[80px] gap-4">
         <div className='flex flex-col gap-6'>
             <h2 className='md:text-[56px] font-semibold md:leading-[72px] text-neutral font-custom'>Our Customer Experiences</h2>
-            <p className='md:text-[18px] leading-[28px]'>Hear what our clients have to say</p>
+            <p className='md:text-[18px] leading-[28px] text-[#736D6D]'>Hear what our clients have to say</p>
         </div>
         <div className="overflow-x-scroll scrollbar-none flex space-x-4 w-full" ref={containerRef}>
           {items.map((item, index) => (

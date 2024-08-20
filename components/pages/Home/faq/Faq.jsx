@@ -60,8 +60,8 @@ const FAQ = () => {
   return (
     <div className="w-full">
       {faqData.map((faq, index) => (
-        <div key={index} className="mb-10">
-        <div onMouseOver={() => handleToggle(index)} className='flex gap-4 items-center justify-between' >
+        <div key={index} className={`mb-10  ${activeIndex === index ?"border-[1px] bg-[#FCFCFC] border-[#FCFCFC] p-2 rounded-md transition-all":""}`}>
+        <div onMouseOver={() => handleToggle(index)} className='flex gap-4 items-center  justify-between font-custom' >
         <h3 className="md:text-[24px]  font-medium transition-all leading-[32px] text-neutral">
             {faq.question}
         </h3>
