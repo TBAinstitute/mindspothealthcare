@@ -116,7 +116,7 @@ export default function () {
                     <p className="text-[#443F3F] md:text-[18px]  ">
                     Our caregivers will be available round the clock and ready to assist in all activities of daily living, morning, noon and night.
                     </p>
-                    <PrimaryButton label={'Schedule an Appointment'} color={'bg-primary'} link={'/'} />
+                    <PrimaryButton label={'Schedule an Appointment'} color={'bg-primary'} link={'https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22'} />
                 </div>
                 <div className="flex flex-col px-[24px] py-6 md:justify-between md:gap-0 gap-6 border-[1px] border-secondary bg-[#FCFCFC] text-[#003740] rounded-lg">
                     <h2 className="font-medium md:text-[48px] text-[24px] md:leading-[64px]">Hourly Care</h2>
@@ -124,7 +124,7 @@ export default function () {
                     Our hourly care ranges from 4 to 24 hours per day. 
                     Mindspot Health Care Services is only a call away for all. Let us help in taking care of your needs and your loved ones.
                     </p>
-                    <PrimaryButton label={'Schedule an Appointment'} color={'bg-primary'} link={'/'} />
+                    <PrimaryButton label={'Schedule an Appointment'} color={'bg-primary'} link={'https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22'} />
                 </div>
            </div>
            </div>

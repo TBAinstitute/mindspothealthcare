@@ -59,9 +59,15 @@ const FAQ = () => {
   return (
     <div className="w-full">
       {faqData.map((faq, index) => (
+<<<<<<< HEAD
         <div key={index} className="mb-10">
         <div onClick={() => handleToggle(index)} className='flex gap-4 items-center justify-between' >
         <h3 className="md:text-[24px]  font-medium transition-all leading-[32px] text-neutral">
+=======
+        <div key={index} className="mb-14">
+        <div onClick={() => handleToggle(index)} className='flex  items-center justify-between' >
+        <h3 className="text-center md:text-[24px] font-medium leading-[32px] text-neutral w-full">
+>>>>>>> Pelumi-indev
             {faq.question}
         </h3>
         {
@@ -69,7 +75,11 @@ const FAQ = () => {
         }
         </div>
           {activeIndex === index && (
+<<<<<<< HEAD
             <p className="faq-answer text-[#736D6D] text-[16px] leading-[24px]">
+=======
+            <p className="faq-answer text-center">
+>>>>>>> Pelumi-indev
               {faq.answer}
             </p>
           )}

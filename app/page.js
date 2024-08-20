@@ -52,7 +52,7 @@ export default function Home() {
               ))}
          </div>
               <div className="flex justify-center items-center md:gap-12 gap-6 ">
-                    <PrimaryButton label={'Schedule an Appointment'} link="https://teams.microsoft.com/l/message/19:4c4c24ea-8525-437b-b085-76b8e553a73a_900899a4-2dcc-4d51-a53b-64ddb0891390@unq.gbl.spaces/1723908544928?context=%7B%22contextType%22%3A%22chat%22%7D" color="bg-primary" />
+                    <PrimaryButton label={'Schedule an Appointment'} link="https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22" color="bg-primary" />
                     <Link href="/" className="underline text-secondary text-[24px] leading-[32px]">See all Services</Link>
               </div>
        </main>
@@ -79,8 +79,10 @@ export default function Home() {
                         <p className="md:text-[14px]">As an insured provider, we prioritize the safety and well-being of our clients.</p>
                     </section>
                 </div>
-                <div>
-                  <button className="px-[40px] py-[14px] bg-secondary rounded-lg border-none">Contact Us</button>
+                <div className="flex" >
+                  <div className="px-[40px] py-[14px] bg-secondary rounded-lg border-none">
+                    <PrimaryButton link={"https://docs.google.com/forms/d/e/1FAIpQLSdd3cCZ1p4Kkq-njTKk76rY04y0JCDtFTZk20oWEALF8B568g/viewform?embedded=true%22"} label={"Contact Us"} />
+                    </div>
                 </div>
               </section>
         </div>
@@ -89,7 +91,7 @@ export default function Home() {
        <main className="mt-12 bg-gradient-to-r from-white via-lightOrange to-white ">
         <div className="md:px-[80px] md:py-[64px] p-6 flex md:flex-row flex-col md:gap-24 gap-6">
               <section className="md:w-1/2 w-full ">
-                 <Image src={img1} alt="image" className="w-full h-[500px]" />
+                 <Image src={img1} alt="image" className=" h-[500px]" />
               </section>
               <section className="md:w-1/2  w-full flex flex-col justify-between text-neutral">
               <h1 className="text-[16px] font-medium leading-[28px] text-primary">Dedicated Service</h1>
@@ -141,7 +143,7 @@ export default function Home() {
        {/* faq */}
        <main>
         <div className="flex flex-col md:gap-6 gap-6 md:p-24 p-6">
-          <h2 className="md:text-[56px] text-[32px] leading-[72px] font-semibold text-neutral">Frequently Asked Questions</h2>
+          <h2 className="text-center md:text-[56px] text-[32px] leading-[72px] font-semibold text-neutral">Frequently Asked Questions</h2>
           <FAQ />
         </div>
        </main>
