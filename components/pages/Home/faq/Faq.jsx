@@ -61,18 +61,16 @@ const FAQ = () => {
     <div className="w-full">
       {faqData.map((faq, index) => (
         <div key={index} className="mb-10">
-          <div onClick={() => handleToggle(index)} className='flex text-center items-center justify-between cursor-pointer'>
-            <h3 className="md:text-[24px] font-medium leading-[32px] text-neutral w-full">
-              {faq.question}
-            </h3>
-            {activeIndex === index ? (
-              <Image src={negativeIcon} alt='faq-icon' />
-            ) : (
-              <Image src={addIcon} alt='faq-icon' />
-            )}
-          </div>
+        <div onMouseOver={() => handleToggle(index)} className='flex gap-4 items-center justify-between' >
+        <h3 className="md:text-[24px]  font-medium transition-all leading-[32px] text-neutral">
+            {faq.question}
+        </h3>
+        {
+          activeIndex == index ? (<Image src={negativeIcon}  alt='faq-icon'/>):(<Image src={addIcon}  alt='faq-icon'/>)
+        }
+        </div>
           {activeIndex === index && (
-            <p className="faq-answer text-center text-[#736D6D] text-[16px] leading-[24px] mt-4">
+            <p className="faq-answer text-[#736D6D] text-[16px] leading-[24px]">
               {faq.answer}
             </p>
           )}

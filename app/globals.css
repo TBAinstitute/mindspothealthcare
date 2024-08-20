@@ -12,7 +12,24 @@
   margin: 0 auto;
 }
 
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@font-face {
+  font-family: 'Geist';
+  src: url('/public/font/statics-ttf/Geist-SemiBold.ttf') format('truetype');
+  
+}
 
+/* body {
+  font-family: 'MyCustomFont', sans-serif;
+} */
+
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 
 .faq-question {
   cursor: pointer;
