@@ -71,7 +71,7 @@ export default function AboutUs() {
               <Image
                 src={AboutImg}
                 alt="about-image"
-                className=" md:max-h-[300px] w-full h-auto"
+                className=" md:max-h-[480px] max-w-[600px]  w-auto h-auto justify-cente"
                 
               />
               <p className="md:text-[18px] text-[#443F3F]">
@@ -87,9 +87,9 @@ export default function AboutUs() {
         </div>
       </main>
       {/* section 2 */}
-      <main className="bg-light">
+      <main className="bg-light" id="Our-Mission">
         <div className="flex md:flex-row flex-col items-center md:px-[80px] md:py-[64px]  p-6 w-full ">
-          <h2 className="md:w-1/2 w-full md:text-[80px] text-[24px] text-[#2C2929] md:leading-[96px] font-semibold ">
+          <h2 className="md:w-1/2 w-full md:text-[80px] text-[24px] text-[#2C2929] md:leading-[96px] font-semibold " >
             Our Mission
           </h2>
           <div className="md:w-1/2 w-full">
@@ -101,7 +101,7 @@ export default function AboutUs() {
         </div>
       </main>
       {/* sectilon 3 */}
-      <main className="bg-gradient-to-r from-white via-[#E5FBFF] to-white">
+      <main className="bg-gradient-to-r from-white via-[#E5FBFF] to-white" id="Our-Values">
         <div className="flex flex-col text-dark md:px-[80px] px-6 md:py-[64px] py-6 ">
           <section className="flex w-full flex-col justify-center items-center">
             <h1 className="text[24px] leading-[32px] text-secondary">
@@ -166,7 +166,7 @@ export default function AboutUs() {
       </main>
 
       {/* section four */}
-      <main className="bg-lightOrange">
+      <main className="bg-lightOrange" id="Our-Commitment">
         <div className="md:px-[80px] px-6 md:py-[64px] py-6 flex  md:flex-row flex-col items-center  md:gap-12 gap-6">
           <div className="flex flex-col gap-6 md:w-1/2 w-full">
             <h2 className="font-medium md:leading-[64px] md:text-[48px] text-[36px]">
@@ -192,12 +192,12 @@ export default function AboutUs() {
         </div>
       </main>
       {/* section five */}
-      <main className="bg-gradient-to-r from-white via-lightOrange to-white">
+      <main className="bg-gradient-to-r from-white via-lightOrange to-white" id="Our-Story">
         <OurStory />
       </main>
 
       {/* section six */}
-      <main className="bg-white">
+      <main className="bg-white" id="Why-Choose-Us">
         <div className="md:px-[80px] px-6 md:py-[64px] py-6 flex flex-col gap-6">
           <h2 className="md:text-[28px] text-[24px] md:leading-[64px] text-center text-[#151314]">
             Why Choose US
