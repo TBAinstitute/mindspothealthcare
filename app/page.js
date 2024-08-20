@@ -171,7 +171,7 @@ export default function Home() {
                     <p className="md:text-[40px] leading-[56px] font-medium text-center">starts with you. </p>
                     </div>
                     <p className="text-[16px] leading-[24px]">Mindspot Health Care Services is always looking for new people to hire  <br className="text-center" /> in our team. Would you like to be part of our company? Send your application online.</p>
-                    <PrimaryButton label="Explore the Career options" link="/" color="bg-secondary" />
+                    <PrimaryButton label="Explore the Career options" link="https://forms.gle/e9Y2AguecvuEixDb8" color="bg-secondary" />
                 </section>
         </div>
        </main>

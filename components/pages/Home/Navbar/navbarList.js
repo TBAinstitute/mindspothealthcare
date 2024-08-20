@@ -9,23 +9,23 @@ export const navList = [
         },
         {
           label: "Our Mission",
-          link: "/",
+          link: "/about-us#Our-Mission",
         },
         {
           label: "Our Values",
-          link: "/",
+          link: "/about-us#Our-Values",
         },
         {
           label: "Our Commitment",
-          link: "/",
+          link: "/about-us#Our-Commitment",
         },
         {
-          label: "Our Stories",
-          link: "/",
+          label: "Our Story",
+          link: "/about-us#Our-Story",
         },
         {
           label: "Why Choose Us",
-          link: "/",
+          link: "/about-us#Why-Choose-Us",
         },
       ],
     },

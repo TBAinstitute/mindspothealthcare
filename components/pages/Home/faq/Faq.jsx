@@ -1,7 +1,8 @@
-"use client"
+"use client";
+
 import React, { useState } from 'react';
-import addIcon from "@/public/image/addIcon.svg"
-import negativeIcon from "@/public/image/negativeIcon.svg"
+import addIcon from "@/public/image/addIcon.svg";
+import negativeIcon from "@/public/image/negativeIcon.svg";
 import Image from 'next/image';
 
 const FAQ = () => {
@@ -10,20 +11,20 @@ const FAQ = () => {
   // FAQ data stored in an array
   const faqData = [
     {
-      question: "What kind of care do you provide? ",
-      answer: "We offer a wide range of services tailored to your specific needs, including companionship, personal care, medication management, and skilled nursing. Whether you need full-time or part-time assistance, we have options to support your independence and well-being. "
+      question: "What kind of care do you provide?",
+      answer: "We offer a wide range of services tailored to your specific needs, including companionship, personal care, medication management, and skilled nursing. Whether you need full-time or part-time assistance, we have options to support your independence and well-being."
     },
-    { 
-      question: "How do I choose the right level of care for my loved one? ",
+    {
+      question: "How do I choose the right level of care for my loved one?",
       answer: "Our care coordinators will work closely with you to assess your loved one's needs and create a personalized care plan. We offer a variety of services, from companionship to skilled nursing, so you can choose the level of support that best fits your situation."
     },
     {
-      question: "How do I schedule a home care visit? ",
+      question: "How do I schedule a home care visit?",
       answer: "Getting started is easy! Simply give us a call or fill in the form to schedule a free in-home assessment. Our care coordinator will discuss your loved one's needs and create a customized care plan."
     },
     {
       question: "What qualifications do your caregivers have?",
-      answer: "Our caregivers are carefully selected and undergo thorough background checks and training. We prioritize compassion, reliability, and expertise in providing the best possible care for our clients.."
+      answer: "Our caregivers are carefully selected and undergo thorough background checks and training. We prioritize compassion, reliability, and expertise in providing the best possible care for our clients."
     },
     {
       question: "How much does home care cost?",
