@@ -96,13 +96,8 @@ const RandomImageSlider = () => {
         <Image
           src={images[currentImage]}
           alt="Random"
-<<<<<<< HEAD
-          className="rounded-lg h-full"
-          style={{ height: "650px" }}
-=======
           className="rounded-lg"
           style={{ height: "650px", width: "650px" }}
->>>>>>> Pelumi-indev
         />
       </div>
 
@@ -116,13 +111,8 @@ const RandomImageSlider = () => {
           <Image
             src={images[nextImage]}
             alt="Random"
-<<<<<<< HEAD
-            className="rounded-lg h-full"
-            style={{ height: "650px" }}
-=======
             className="rounded-lg"
             style={{ height: "650px", width: "650px" }}
->>>>>>> Pelumi-indev
           />
         </div>
       )}
@@ -131,4 +121,3 @@ const RandomImageSlider = () => {
 };
 
 export default RandomImageSlider;
-
