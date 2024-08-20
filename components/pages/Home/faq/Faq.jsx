@@ -60,7 +60,7 @@ const FAQ = () => {
     <div className="w-full">
       {faqData.map((faq, index) => (
         <div key={index} className="mb-10">
-        <div onClick={() => handleToggle(index)} className='flex gap-4 items-center justify-between' >
+        <div onMouseOver={() => handleToggle(index)} className='flex gap-4 items-center justify-between' >
         <h3 className="md:text-[24px]  font-medium transition-all leading-[32px] text-neutral">
             {faq.question}
         </h3>

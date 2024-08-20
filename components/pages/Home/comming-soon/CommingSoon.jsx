@@ -18,7 +18,7 @@ export const CommingSoon = () => {
     //     }
     // ]
   return (
-    <div className='flex px-24'>
+    <div className='flex px-24 md:flex-row flex-col'>
             <div className='md:w-1/2 w-full flex  flex-col gap-6 '>
             <p className='mmd:text-[16px] text-secondary'>Comming Soon!!!</p>
                     <h2 className='md:text-[48px] text-[16px] text-neutral font-medium '>Blog and Articles</h2>

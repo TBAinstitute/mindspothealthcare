@@ -6,7 +6,46 @@ import img1 from "@/public/image/patient1.png"
 import arrowIcon from "@/public/image/arrowIcon.svg"
 import FAQ from "@/components/pages/Home/faq/Faq";
 import { CommingSoon } from "@/components/pages/Home/comming-soon/CommingSoon";
+import HorizontalScroll from "@/components/pages/Home/experience-slide/ExperienceSlide";
 export default function Home() {
+
+
+  const items = [
+     {
+      id: 1,
+      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      name:"Chinedu Mercy",
+      state:"Lagos, Nigeria"
+     },
+     {
+      id: 2,
+      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      name:"Chinedu Mercy",
+      state:"Lagos, Nigeria"
+     },
+     {
+      id: 3,
+      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      name:"Chinedu Mercy",
+      state:"Lagos, Nigeria"
+     },
+     {
+      id: 4,
+      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      name:"Chinedu Mercy",
+      state:"Lagos, Nigeria"
+     },
+     {
+      id: 5,
+      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      name:"Chinedu Mercy",
+      state:"Lagos, Nigeria"
+     },
+    // Add more items
+  ];
+  
+ 
+  
 
   const service = [
     {id:1,
@@ -58,7 +97,7 @@ export default function Home() {
        </main>
        {/* section three */}
        <main className="mt-12 service bg-red-950">
-        <div className="md:px-[80px] overlay md:py-[64px] p-6 flex md:flex-row flex-col gap-12">
+        <div className="md:px-[80px] overlay md:py-[80px] p-6 flex md:flex-row flex-col gap-12">
               <section className="md:w-1/2 w-full md:pr-12">
                 <h2 className="text-[16px] font-medium text-[#00B9BD]">Excellent Service</h2>
                 <p className="md:text-[48px] leading-[64px] font-medium text-white">
@@ -134,7 +173,10 @@ export default function Home() {
                 </section>
         </div>
        </main>
-       {/*  */}
+       {/* Experience */}
+       <main className="mt-12">
+       <HorizontalScroll items={items} />;
+       </main>
        <main className="mt-12">
          <CommingSoon />
        </main>
