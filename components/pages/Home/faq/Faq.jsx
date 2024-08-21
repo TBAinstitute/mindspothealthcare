@@ -56,26 +56,30 @@ const FAQ = () => {
   const handleToggle = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
   return (
     <div className="w-full">
       {faqData.map((faq, index) => (
-<<<<<<< HEAD
-        <div key={index} className="mb-10">
-        <div onMouseOver={() => handleToggle(index)} className='flex gap-4 items-center justify-between' >
-        <h3 className="md:text-[24px]  font-medium transition-all leading-[32px] text-center text-neutral">
-=======
-        <div key={index} className={`mb-10  ${activeIndex === index ?"border-[1px] bg-[#FCFCFC] border-[#FCFCFC] p-2 rounded-md transition-all":""}`}>
-        <div onMouseOver={() => handleToggle(index)} className='flex gap-4 items-center  justify-between font-custom' >
-        <h3 className="md:text-[24px]  font-medium transition-all leading-[32px] text-neutral">
->>>>>>> 6c12ae52b72af3be99ed038d29ba65d851bb9d26
-            {faq.question}
-        </h3>
-        {
-          activeIndex == index ? (<Image src={negativeIcon}  alt='faq-icon'/>):(
-          <Image src={addIcon}  alt='faq-icon'/>)
-        }
-        </div>
+        <div
+          key={index}
+          className={`mb-10 ${
+            activeIndex === index
+              ? "border-[1px] bg-[#FCFCFC] border-[#FCFCFC] p-2 rounded-md transition-all"
+              : ""
+          }`}
+        >
+          <div
+            onMouseOver={() => handleToggle(index)}
+            className="flex gap-4 items-center justify-between font-custom"
+          >
+            <h3 className="md:text-[24px] font-medium transition-all leading-[32px] text-neutral">
+              {faq.question}
+            </h3>
+            {activeIndex === index ? (
+              <Image src={negativeIcon} alt="faq-icon" />
+            ) : (
+              <Image src={addIcon} alt="faq-icon" />
+            )}
+          </div>
           {activeIndex === index && (
             <p className="faq-answer text-[#736D6D] text-[16px] leading-[24px] text-center">
               {faq.answer}
@@ -85,6 +89,5 @@ const FAQ = () => {
       ))}
     </div>
   );
-};
-
+}  
 export default FAQ;
