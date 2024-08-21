@@ -44,7 +44,7 @@ export default function () {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <main className="flex flex-col gap-6">
+    <main className="flex flex-col gap-6 ">
       <main className="md:h-screen ">
         <div className="h-full  flex justify-center items-center ">
           <div className="flex flex-col bg-light md:px-[80px] md:py-[80px] pt-[8rem]  p-6 w-full ">
@@ -63,12 +63,10 @@ export default function () {
       </main>
 
       {/* section two */}
-      <main className="bg-white">
+      <main className="bg-white -mt-[7rem]">
         <div className="flex flex-col gap-6 text-dark md:px-[80px] px-6 md:pb-[64px] py-6 ">
           <section className="flex w-full flex-col justify-center items-center">
-            <h1 className="text[24px] leading-[32px] text-secondary">
-              Our Values
-            </h1>
+            
             <h2 className="md:text-[28px] text-[24px] leading-[64px] text-[#151314]">
               Crafted Care Services for Your Needs
             </h2>

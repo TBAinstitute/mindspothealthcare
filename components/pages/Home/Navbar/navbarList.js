@@ -43,7 +43,7 @@ export const navList = [
         },
         {
           label: "Getting Started",
-          link: "/",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22",
         },
         {
           label: "Client Satisfaction Survey ",

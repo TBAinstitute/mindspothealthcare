@@ -148,9 +148,7 @@ export default function AboutUs() {
       >
         <div className="flex flex-col text-dark md:px-[80px] px-6 md:py-[64px] py-6">
           <section className="flex w-full flex-col justify-center items-center">
-            <h1 className="text-[24px] leading-[32px] text-secondary">
-              Our Values
-            </h1>
+            
             <h2 className="md:text-[28px] text-[24px] leading-[64px] text-[#151314]">
               Our Company's Core Values
             </h2>

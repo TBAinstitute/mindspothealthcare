@@ -82,7 +82,7 @@ export const Footer = () => {
               <PrimaryButton
                 label={"Subscribe"}
                 color={"bg-primary"}
-                link={""}
+                link={"https://docs.google.com/forms/d/e/1FAIpQLSe__UZ7FcSLRXFj7jliEk5ZAhY9w1skmkEDyAum7wOtCK_YQw/viewform?embedded=true%22"}
               />
             </div>
           </div>
