@@ -13,6 +13,7 @@ export default function AboutUs() {
       content:
         "We approach every client with empathy, understanding, and kindness. Our goal is to create a supportive environment that fosters dignity and comfort in every interaction.",
       position: "left",
+
     },
     {
       id: 2,
@@ -20,18 +21,53 @@ export default function AboutUs() {
       content:
         "We are committed to positively impacting the Maryland community through: ",
       position: "left",
+      children:[
+        {
+          id:1,
+          label:"Safety: Prioritizing the safety and well-being of our clients and the community by adhering to strict safety protocols and creating a secure environment."
+        },
+        {
+          id:2,
+          label:"Outreach: Engaging in community health initiatives and collaborative efforts to enhance overall well-being."
+        },
+      ]
     },
     {
       id: 3,
       label: "Excellence",
-      content: "We are dedicated to providing top-quality care through: ",
+      content: "We are dedicated to providing top-quality care through:",
       position: "center",
+      children:[
+        {
+          id:1,
+          label:"Integrity: Upholding the highest standards of honesty and ethical practices in all aspects of our care."
+        },
+        {
+          id:2,
+          label:"Respect: Honoring each individual's unique needs, preferences, and cultural background, ensuring that everyone is treated with dignity."
+        },
+        {
+          id:3,
+          label:"Accountability: Taking responsibility for our actions and decisions, ensuring that we meet the highest standards and fulfill our commitment to exceptional care."
+        },
+      ]
     },
     {
       id: 4,
       label: "Empowering Care",
-      content: "We believe in enhancing well-being through: ",
+      content: "We believe in enhancing well-being through:",
       position: "right",
+      children:[
+        {
+          id:1,
+          label:"Collaboration: Working closely with clients, families, and healthcare professionals to create effective, personalized care plans. We value open communication and teamwork to achieve the best outcome."
+        },
+        {
+          id:2,
+          label:"Empowerment: Encouraging clients to be actively involved in their care, supporting them in making informed decisions about their health, and promoting independence and quality of life."
+        },
+
+      ]
     },
     {
       id: 5,
@@ -45,23 +81,38 @@ export default function AboutUs() {
   return (
     <main className=" justify-center flex-col flex gap-12 pt-28">
       {/* section 1 */}
+<<<<<<< HEAD
       <main className="md:h-screen">
+=======
+      <main className="md:h-screen items-center ">
+>>>>>>> 6c12ae52b72af3be99ed038d29ba65d851bb9d26
         <div className="h-full  flex justify-center items-center ">
-          <div className="flex md:flex-row     flex-col md:gap-24 gap-6 md:px-[80px] py-6  px-6   ">
-            <section className="flex flex-col gap-6 md:w-1/2 w-full">
+          <div className="flex md:flex-row     flex-col md:gap-48 lg:pt-36 md:pt-12 gap-6 md:px-[80px] py-6  px-6   ">
+            <section className="flex flex-col gap-2 md:w-1/2 w-full">
               <h2 className="font-medium md:text-[24px] text-[16px] text-secondary leading-[32px]">
                 About Mindspot
               </h2>
+<<<<<<< HEAD
               <h3 className="md:text-[40px] text-[24px] text-[#151314] md:leading-[56px]">
     We believe that home is the foundation of well-being, and we are
     honored to be a trusted partner in our patients' healthcare
     journeys
 </h3>
 
+=======
+              <h3 className="md:text[40px] text-[24px] text-[#151314]  md:leading-[56px]">
+                We believe that home is the foundation of well-being, and we are
+                honored to be a trusted partner in our patients' healthcare
+                journeys
+              </h3>
+>>>>>>> 6c12ae52b72af3be99ed038d29ba65d851bb9d26
               <p className="md:text-[18px] text-[#443F3F]">
                 As your trusted partner in Maryland home healthcare, we are
                 committed to providing compassionate, personalized care that
-                empowers individuals to thrive in their own homes.  We are a
+                empowers individuals to thrive in their own homes.  
+              </p>
+              <p className="md:text-[18px] text-[#443F3F]">
+              We are a
                 licensed and insured home care provider recognized by the State
                 of Maryland. We take great pride in being part of the Maryland
                 community and are dedicated to serving its residents with
@@ -72,7 +123,7 @@ export default function AboutUs() {
               <Image
                 src={AboutImg}
                 alt="about-image"
-                className=" md:max-h-[480px] max-w-[600px]  w-auto h-auto justify-cente"
+                className=" md:max-h-[300px] max-w-full rounded-lg  w-auto h-auto justify-cente"
                 
               />
               <p className="md:text-[18px] text-[#443F3F]">
@@ -89,7 +140,7 @@ export default function AboutUs() {
       </main>
       {/* section 2 */}
       <main className="bg-light" id="Our-Mission">
-        <div className="flex md:flex-row flex-col items-center md:px-[80px] md:py-[64px]  p-6 w-full ">
+        <div className="flex md:flex-row flex-col items-center md:px-[80px] md:py-[80px]  p-6 w-full ">
           <h2 className="md:w-1/2 w-full md:text-[80px] text-[24px] text-[#2C2929] md:leading-[96px] font-semibold " >
             Our Mission
           </h2>
@@ -127,28 +178,42 @@ export default function AboutUs() {
                   .filter((card) => card.position === "left")
                   .map((card) => (
                     <div key={card.id} className="bg-white p-4 rounded-lg  flex flex-col gap-6 ">
-                      <h2 className="font-medium md:text-[32px] text-[16px] text-primary md:leading-[44px]">{card.label}</h2>
+                      <h2 className="font-medium md:text-[32px] text-[16px] text-primary md:leading-[44px] font-custom">{card.label}</h2>
                       <p className="md:text-[16px] md:leading-[24px] text-[#2C2929]">{card.content}</p>
+                    <div>
+                    {
+                        card.children?.map((ch)=>(
+                          <li className="md:text-[16px] md:leading-[24px] text-[12px] list-disc">{ch.label}</li>
+                        ))
+                      }
+                    </div>
                     </div>
                   ))}
               </div>
 
               {/* Center Card */}
-              <div className="flex justify-center items-center sm:mx-4 w-1/3">
+              <div className="flex justify-center  items-center sm:mx-4 w-1/3">
                 {cardData
                   .filter((card) => card.position === "center")
                   .map((card) => (
                     <div
                       key={card.id}
                       className="bg-white  flex flex-col gap-6 p-4 rounded-lg "
-                    > <h2 className="font-medium md:text-[32px] text-[16px] text-primary md:leading-[44px]">{card.label}</h2>
+                    > <h2 className="font-medium md:text-[32px] text-[16px] text-primary md:leading-[44px] font-custom">{card.label}</h2>
                       <p className="md:text-[16px] md:leading-[24px] text-[#2C2929]">{card.content}</p>
+                      <div>
+                    {
+                        card.children?.map((ch)=>(
+                          <li className="md:text-[16px] md:leading-[24px] text-[12px] list-disc">{ch.label}</li>
+                        ))
+                      }
+                    </div>
                     </div>
                   ))}
               </div>
 
               {/* Right Column */}
-              <div className="flex flex-col space-y-4 sm:space-y-0 sm:ml-4 w-1/3 gap-6 ">
+              <div className="flex flex-col space-y-4 sm:space-y-0 sm:ml-4 w-1/3 gap-8 ">
                 {cardData
                   .filter((card) => card.position === "right")
                   .map((card) => (
@@ -156,8 +221,15 @@ export default function AboutUs() {
                       key={card.id}
                       className="bg-white  p-4 flex flex-col gap-6 rounded-lg "
                     >
-                       <h2 className="font-medium md:text-[32px] text-[16px] text-primary md:leading-[44px]">{card.label}</h2>
+                       <h2 className="font-medium md:text-[32px] text-[16px] text-primary md:leading-[44px] font-custom">{card.label}</h2>
                        <p className="md:text-[16px] md:leading-[24px] text-[#2C2929]">{card.content}</p>
+                       <div>
+                    {
+                        card.children?.map((ch)=>(
+                          <li className="md:text-[16px] md:leading-[24px] text-[12px] list-disc">{ch.label}</li>
+                        ))
+                      }
+                    </div>
                     </div>
                   ))}
               </div>
@@ -203,7 +275,7 @@ export default function AboutUs() {
           <h2 className="md:text-[28px] text-[24px] md:leading-[64px] text-center text-[#151314]">
             Why Choose US
           </h2>
-          <Image src={why} alt="why-image" />
+          <Image src={why} alt="why-image" className="w-full max-h-[684px]" />
           <div className="flex md:flex-row flex-col md:gap-12 gap-6">
             <section className="flex gap-4 flex-col">
               <p className="md:text-[18px] text-[14px] leading-[28px]">

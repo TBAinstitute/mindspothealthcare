@@ -11,6 +11,9 @@
   width: 60%;
   margin: 0 auto;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 .scrollbar-none {
   -ms-overflow-style: none; /* IE and Edge */
@@ -18,8 +21,8 @@
 }
 @font-face {
   font-family: 'Geist';
-  src: url('/public/font/statics-ttf/Geist-SemiBold.ttf') format('truetype');
-  
+  src: url('/public/font/statics-ttf/Geist-Bold.ttf') format('truetype');
+  font-weight: 500;
 }
 
 /* body {
