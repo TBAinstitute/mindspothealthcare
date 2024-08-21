@@ -43,20 +43,21 @@ export default function AboutUs() {
   ];
 
   return (
-    <main className=" flex-col flex gap-12">
+    <main className=" justify-center flex-col flex gap-12 pt-28">
       {/* section 1 */}
-      <main className="md:h-screen ">
+      <main className="md:h-screen">
         <div className="h-full  flex justify-center items-center ">
           <div className="flex md:flex-row     flex-col md:gap-24 gap-6 md:px-[80px] py-6  px-6   ">
             <section className="flex flex-col gap-6 md:w-1/2 w-full">
               <h2 className="font-medium md:text-[24px] text-[16px] text-secondary leading-[32px]">
                 About Mindspot
               </h2>
-              <h3 className="md:text[40px] text-[24px] text-[#151314] md:leading-[56px]">
-                We believe that home is the foundation of well-being, and we are
-                honored to be a trusted partner in our patients' healthcare
-                journeys
-              </h3>
+              <h3 className="md:text-[40px] text-[24px] text-[#151314] md:leading-[56px]">
+    We believe that home is the foundation of well-being, and we are
+    honored to be a trusted partner in our patients' healthcare
+    journeys
+</h3>
+
               <p className="md:text-[18px] text-[#443F3F]">
                 As your trusted partner in Maryland home healthcare, we are
                 committed to providing compassionate, personalized care that
