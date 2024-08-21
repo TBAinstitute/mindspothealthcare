@@ -11,31 +11,70 @@ export default function () {
       id: 1,
       label: "Skilled Nursing Care",
       desc: "Our registered nurses (RNs) provide expert medical care and support in the comfort of your home. Services include:",
+      details: [
+        "1. Medication management and administration",
+        "2. Wound care and dressing changes",
+        "3. Therapy and management",
+        "4. Post-surgical care",
+        "5. Monitoring vital signs and managing chronic conditions",
+        "6. Developing and implementing individualized care plans",
+      ]
     },
     {
       id: 2,
       label: "Personal Care Assistance",
       desc: "Our compassionate caregivers provide assistance with daily living activities, promoting independence and dignity. Services include: ",
+      details: [
+          "1. Physical therapy (PT) to restore mobility, strength, and function", 
+          "2. Occupational therapy (OT) to assist with daily living activities and develop adaptive strategies", 
+          "3. Speech therapy to address communication and swallowing difficulties ",
+      ]
     },
     {
       id: 3,
       label: "Therapy Services",
       desc: "Our licensed therapists help you regain independence and improve your quality of life through specialized treatment plans. Services include: ",
+      details: [
+        "1. Bathing and showering",
+        "2. Dressing and grooming" ,
+        "3. Toileting and incontinence care",
+        "4. Mobility assistance (transferring, walking, using assistive devices)",
+        "5. Meal preparation and feeding", 
+        "6. Medication reminders ",
+      ]
     },
     {
       id: 4,
       label: "Companion Services",
       desc: "Our friendly companions offer companionship, support, and social interaction, helping to prevent isolation and loneliness. Services include: ",
+      details: [
+        "1. Engaging in conversation and activities", 
+        "2. Providing emotional support and companionship" ,
+        "3. Accompanying clients on errands and appointments",
+        "4. Assisting with hobbies and interests",
+      ]
     },
     {
       id: 5,
       label: "Transportation Services",
-      desc: "Our friendly companions offer companionship, support, and social interaction, helping to prevent isolation and loneliness. Services include: ",
+      desc: "Our reliable drivers provide safe and comfortable transportation to medical appointments, social events, and other destinations. Services include: ",
+      details: [
+        "1. Scheduling and coordinating transportation" ,
+        "2. Assisting with transfers and mobility aids" ,
+        "3. Accompanying clients to and from appointments",
+      ]
     },
     {
       id: 6,
       label: "Housekeeping and Cleaning Services",
       desc: "Our dedicated cleaning staff helps maintain a clean and safe living environment. Services include:",
+      details: [
+          "1. Dusting, vacuuming, and mopping floors", 
+          "2. Cleaning bathrooms and kitchens" ,
+          "3. Changing bed linens and making beds", 
+          "4. Washing dishes and taking out trash",
+          "5. Organizing living spaces",
+      ]
     },
   ];
 
@@ -76,22 +115,35 @@ export default function () {
             </p>
           </section>
           <section>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  md:gap-12 gap-6 ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-12 gap-6">
               {serviceData.map((service, index) => (
-                <div className="flex flex-col gap-6 bg-[#FCFCFC] rounded-lg px-[24px] py-[16px] " key={service.id}>
-                  <h2 className="text-[#003740] md:text-[32px] text-[24px] font-medium">{service.label}</h2>
-                  <div className="flex flex-col">
-                    <div className=" flex w-full gap-4" onClick={handleToggle}>
-                      <p className="md:text-[16px] text-dark">{service.desc}</p>
-                      <Image src={addIcon} alt="faq-icon" />
-                    </div>
-                    {/* {activeIndex === index && (
-                      <p className="faq-answer">{faq.answer}</p>
-                    )} */}
+                <div className="flex flex-col gap-6 bg-[#FCFCFC] rounded-lg px-[24px] py-[16px]" key={service.id}>
+                  <h2 className="text-[#003740] md:text-[32px] text-[24px] font-medium text-center">
+                    {service.label}
+                  </h2>
+                  <div className="flex flex-col items-center">
+                    <p className="md:text-[16px] text-dark text-center">{service.desc}</p>
+                    {activeIndex === index && (
+                      <>
+                        <ul className="md:text-[16px] text-dark mt-4">
+                          {service.details.map((detail, i) => (
+                            <li key={i}>{detail}</li>
+                          ))}
+                        </ul>
+                        <div className="w-full mt-4">
+                          <PrimaryButton label={'Book Service'} color={'bg-primary'} link={'https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22'} />
+                        </div>
+                      </>
+                    )}
                   </div>
-                    <div className="w-full  ">
-                    <PrimaryButton label={'Book Service'} color={'bg-primary'} link={'/'} />
-                    </div>
+                  <div className="flex justify-center w-full mt-4 items-center">
+                    <button
+                      onClick={() => handleToggle(index)}
+                      className="text-white bg-primary py-2 px-4 rounded items-center"
+                    >
+                      {activeIndex === index ? "See Less" : "See More"}
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>

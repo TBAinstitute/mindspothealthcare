@@ -20,7 +20,7 @@ export const CommingSoon = () => {
   return (
     <div className='flex px-24 md:flex-row flex-col'>
             <div className='md:w-1/2 w-full flex  flex-col gap-6 '>
-            {/* <p className='mmd:text-[16px] text-secondary'>Coming Soon!!!</p> */}
+             <p className='mmd:text-[16px] text-secondary'>Coming Soon!!!</p> 
                     <h2 className='md:text-[48px] text-[16px] text-neutral font-medium font-custom '>Blog and Articles</h2>
                     <Image src={commingSoon} alt='comming-soon' className='md:h-[400px] h-auto' />
                    {/* <div className='w-fit'> <PrimaryButton label={'Comming Soon!!!'} link={'/'} color={'bg-primary'} icon="" /></div> */}
