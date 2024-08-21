@@ -9,7 +9,7 @@ export const Hero = () => {
       <><div className="flex md:flex-row flex-col lg:gap-12 gap-6  items-center h-screen  bg-gradient-to-r from-gray-100 via-[#E5FBFF] to-gray-100  ">
       <div className=" md:w-1/2 w-full flex items-center ">
         <div className="md:pl-[80px] lg:pr-[40px] md:pr-[20px] px-6  flex flex-col gap-6">
-          <h2 className="text-primary lg:text-[64px] md:text-[44px] font-medium  leading-tight font-custom ">
+          <h2 className="text-primary lg:text-[54px] md:text-[44px] font-medium  leading-tight font-custom ">
             Providing <span className="text-secondary">Exceptional </span>{" "}
             Home Care Services
           </h2>
