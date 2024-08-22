@@ -26,7 +26,7 @@ export default function AboutUs() {
           id:1,
           label:"Safety: Prioritizing the safety and well-being of our clients and the community by adhering to strict safety protocols and creating a secure environment."
         },
-        {
+        { 
           id:2,
           label:"Outreach: Engaging in community health initiatives and collaborative efforts to enhance overall well-being."
         },
@@ -84,7 +84,7 @@ export default function AboutUs() {
       <div className="md:h-screen">
         <div className="md:h-screen items-center">
           <div className="h-full flex justify-center items-center">
-            <div className="flex md:flex-row flex-col md:gap-48 lg:pt-36 md:pt-12 gap-6 md:px-[80px] py-6 px-6">
+            <div className="flex md:flex-row flex-col md:gap-48  md:pt-12 gap-6 md:px-[80px] py-6 px-6">
               <section className="flex flex-col gap-2 md:w-1/2 w-full">
                 <h2 className="font-medium md:text-[24px] text-[16px] text-secondary leading-[32px]">
                   About Mindspot

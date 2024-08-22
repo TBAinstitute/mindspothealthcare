@@ -85,14 +85,14 @@ export default function Home() {
               {service.map((item) => (
                 <div key={item.id} className="bg-white border-[1px] p-6 rounded-md shadow-md flex flex-col gap-12 ">
                       <h2 className="text-[24px] font-medium leading-[32px] pr-12 font-custom ">{item.title} </h2>
-                      <button className="border-none bg-white text-[#736D6D] text-[14px] text-start flex items-center">See more <Image src={arrowIcon} alt="see-more" /></button>
+                      <Link href="/our-services" className="border-none bg-white text-[#736D6D] text-[14px] text-start flex items-center">See more <Image src={arrowIcon} alt="see-more" /></Link>
 
                 </div>
               ))}
          </div>
               <div className="flex justify-center items-center md:gap-12 gap-6 ">
                     <PrimaryButton label={'Schedule an Appointment'} link="https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22" color="bg-primary" />
-                    <Link href="/" className="underline text-secondary text-[24px] leading-[32px]">See all Services</Link>
+                    <Link href="/our-services" className="underline text-secondary text-[24px] leading-[32px]">See all Services</Link>
               </div>
        </main>
        {/* section three */}
@@ -162,7 +162,7 @@ export default function Home() {
                     
                     <p className="text-[16px] leading-[24px]">The dedicated team at Mindspot Health Care Services is committed to ensuring your complete satisfaction. Our caregivers not only provide the comfort you need but also enrich your life and the lives of your loved ones.</p>
                     <div className="flex justify-center items-center">
-                    <div className="w-fit"><PrimaryButton label="Find out more About Us" link="/" color="bg-secondary" /></div>
+                    <div className="w-fit"><PrimaryButton label="Find out more About Us" link="/about-us" color="bg-secondary" /></div>
                     </div>
                 </section>
                 <section className="md:w-1/2 w-full flex flex-col gap-6 text-center px-8 py-12 text-[#E5E5E5]">

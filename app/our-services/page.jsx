@@ -12,12 +12,12 @@ export default function () {
       label: "Skilled Nursing Care",
       desc: "Our registered nurses (RNs) provide expert medical care and support in the comfort of your home. Services include:",
       details: [
-        "1. Medication management and administration",
-        "2. Wound care and dressing changes",
-        "3. Therapy and management",
-        "4. Post-surgical care",
-        "5. Monitoring vital signs and managing chronic conditions",
-        "6. Developing and implementing individualized care plans",
+        " Medication management and administration",
+        " Wound care and dressing changes",
+        " Therapy and management",
+        " Post-surgical care",
+        " Monitoring vital signs and managing chronic conditions",
+        " Developing and implementing individualized care plans",
       ]
     },
     {
@@ -25,9 +25,9 @@ export default function () {
       label: "Personal Care Assistance",
       desc: "Our compassionate caregivers provide assistance with daily living activities, promoting independence and dignity. Services include: ",
       details: [
-          "1. Physical therapy (PT) to restore mobility, strength, and function", 
-          "2. Occupational therapy (OT) to assist with daily living activities and develop adaptive strategies", 
-          "3. Speech therapy to address communication and swallowing difficulties ",
+          " Physical therapy (PT) to restore mobility, strength, and function", 
+          " Occupational therapy (OT) to assist with daily living activities and develop adaptive strategies", 
+          " Speech therapy to address communication and swallowing difficulties ",
       ]
     },
     {
@@ -35,12 +35,12 @@ export default function () {
       label: "Therapy Services",
       desc: "Our licensed therapists help you regain independence and improve your quality of life through specialized treatment plans. Services include: ",
       details: [
-        "1. Bathing and showering",
-        "2. Dressing and grooming" ,
-        "3. Toileting and incontinence care",
-        "4. Mobility assistance (transferring, walking, using assistive devices)",
-        "5. Meal preparation and feeding", 
-        "6. Medication reminders ",
+        " Bathing and showering",
+        " Dressing and grooming" ,
+        " Toileting and incontinence care",
+        " Mobility assistance (transferring, walking, using assistive devices)",
+        " Meal preparation and feeding", 
+        " Medication reminders ",
       ]
     },
     {
@@ -48,10 +48,10 @@ export default function () {
       label: "Companion Services",
       desc: "Our friendly companions offer companionship, support, and social interaction, helping to prevent isolation and loneliness. Services include: ",
       details: [
-        "1. Engaging in conversation and activities", 
-        "2. Providing emotional support and companionship" ,
-        "3. Accompanying clients on errands and appointments",
-        "4. Assisting with hobbies and interests",
+        " Engaging in conversation and activities", 
+        " Providing emotional support and companionship" ,
+        " Accompanying clients on errands and appointments",
+        " Assisting with hobbies and interests",
       ]
     },
     {
@@ -59,9 +59,9 @@ export default function () {
       label: "Transportation Services",
       desc: "Our reliable drivers provide safe and comfortable transportation to medical appointments, social events, and other destinations. Services include: ",
       details: [
-        "1. Scheduling and coordinating transportation" ,
-        "2. Assisting with transfers and mobility aids" ,
-        "3. Accompanying clients to and from appointments",
+        " Scheduling and coordinating transportation" ,
+        " Assisting with transfers and mobility aids" ,
+        " Accompanying clients to and from appointments",
       ]
     },
     {
@@ -69,11 +69,11 @@ export default function () {
       label: "Housekeeping and Cleaning Services",
       desc: "Our dedicated cleaning staff helps maintain a clean and safe living environment. Services include:",
       details: [
-          "1. Dusting, vacuuming, and mopping floors", 
-          "2. Cleaning bathrooms and kitchens" ,
-          "3. Changing bed linens and making beds", 
-          "4. Washing dishes and taking out trash",
-          "5. Organizing living spaces",
+          " Dusting, vacuuming, and mopping floors", 
+          " Cleaning bathrooms and kitchens" ,
+          " Changing bed linens and making beds", 
+          " Washing dishes and taking out trash",
+          " Organizing living spaces",
       ]
     },
   ];
@@ -127,7 +127,7 @@ export default function () {
                       <>
                         <ul className="md:text-[16px] text-dark mt-4">
                           {service.details.map((detail, i) => (
-                            <li key={i}>{detail}</li>
+                            <li key={i} className="list-disc">{detail}</li>
                           ))}
                         </ul>
                         <div className="w-full mt-4">

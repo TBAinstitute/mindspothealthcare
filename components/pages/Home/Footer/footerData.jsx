@@ -47,7 +47,7 @@ export const footerData = [
         },
         {
           label: "Resources",
-          link: "/",
+          link: "#",
         },
         {
           label: "Getting Started",
