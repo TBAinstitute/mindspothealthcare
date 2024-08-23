@@ -39,15 +39,15 @@ export const navList = [
         },
         {
           label: "Resources",
-          link: "/",
+          link: "/resources",
         },
         {
           label: "Getting Started",
-          link: "https://docs.google.com/forms/d/e/1FAIpQLSc0IgYpVjE3xLNS7bdbd1HN_cHx5o2Of1yfAXANgCVFC87p6g/viewform?embedded=true%22",
+          link: "/get-started",
         },
         {
           label: "Client Satisfaction Survey ",
-          link: "https://docs.google.com/forms/d/e/1FAIpQLScaTC28NIXPOo5XBaZRMKrB0LlBiQXK8RNCg2bFe4ZJw9jCcA/viewform?embedded=true%22",
+          link: "/client-satisfaction-survey",
         },
 
       ],

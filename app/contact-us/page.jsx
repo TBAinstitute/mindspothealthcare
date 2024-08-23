@@ -1,6 +1,7 @@
 import { BreadCrumb } from "@/components/pages/BreadCrumb";
 import { PrimaryButton } from "@/components/PrimaryButton";
-export default function Career() {
+import FAQ from "@/components/pages/Home/faq/Faq";
+export default function ContactUs() {
   return (
     <div className="w-ful flex flex-col md:gap-12 gap-6 ">
       <main className="md:h-screen ">
@@ -21,6 +22,12 @@ export default function Career() {
               </div>
           </div>
       </main>
+      <main>
+        <div className="flex flex-col md:gap-6 gap-6 md:p-24 p-6">
+          <h2 className="text-center md:text-[56px] text-[32px] leading-[72px] font-semibold text-neutral font-custom">Frequently Asked Questions</h2>
+          <FAQ />
+        </div>
+       </main>
     </div>
   );
 }
