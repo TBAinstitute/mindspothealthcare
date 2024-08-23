@@ -61,8 +61,8 @@ pipelines:
             - ls -l .next/server/app/**
             - pipe: atlassian/ftp-deploy:0.3.1
               variables:
-                USERNAME: $BITBUCKET_USERNAME
-                PASSWORD: $FTP_PASSWORD
+                USERNAME: $mindspothealthcare@mindspothealthcare.com
+                PASSWORD: $gR1=$Fs3RSB%K_I*^Q
                 SERVER: ftp.mindspothealthcare.com
                 REMOTE_PATH: /
                 LOCAL_PATH: .next/standalone
