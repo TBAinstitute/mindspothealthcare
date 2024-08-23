@@ -79,7 +79,7 @@ export default function AboutUs() {
   ];
 
   return (
-    <main className="justify-center flex-col flex gap-12 pt-28">
+    <main className="justify-center flex-col flex gap-12 pt-28 md:pt-0">
       {/* section 1 */}
       <div className="md:h-screen">
         <div className="md:h-screen items-center">

@@ -127,7 +127,7 @@ export default function () {
                       <>
                         <ul className="md:text-[16px] text-dark mt-4">
                           {service.details.map((detail, i) => (
-                            <li key={i} className="list-disc">{detail}</li>
+                            <li key={i} className="list-disc ">{detail}</li>
                           ))}
                         </ul>
                         <div className="w-full mt-4">

@@ -29,7 +29,7 @@ export const Footer = () => {
             </div>
             <div className="flex gap-4 items-center ">
               <Image src={emailIcon} alt="" />
-              <a href="info@mindspothealthcare.com">
+              <a href=" mailto:info@mindspothealthcare.com">
                 info@mindspothealthcare.com
               </a>
             </div>
