@@ -1,5 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/mindspothealthca/mindspothealthcare/mindspothealthcare
+    - export DEPLOYPATH='/home/mindspothealthca/public_html/nextjs_app'
+    - echo "Starting deployment to $DEPLOYPATH"
+    - mkdir -p $DEPLOYPATH
     - /bin/cp -R .next/standalone/* $DEPLOYPATH/
+    - echo "Deployment completed"
+
