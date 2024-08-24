@@ -3,7 +3,7 @@
 import copy from "@/public/image/copyIcon.svg";
 import frame from "@/public/image/frame.png";
 import arrowIcon from "@/public/image/arrowIcon.svg";
-import download from "@/public/image/DownloadIcon.svg";
+import download from "@/public/image/downloadIcon.svg";
 import { PrimaryButton } from "@/components/PrimaryButton";
 import Image from "next/image";
 export default function GetStarted(){
