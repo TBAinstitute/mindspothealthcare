@@ -1,7 +1,7 @@
 "use client"
 
 import copy from "@/public/image/copyIcon.svg";
-import copyArrow from "@/public/image/copyArrow.svg";
+import copyArrow from "@/public/image/CopyArrow.svg";
 import Image from "next/image";
 export default function Resources(){
 const resources = [
