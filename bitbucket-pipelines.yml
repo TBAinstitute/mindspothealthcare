@@ -62,7 +62,7 @@ pipelines:
             - ls -l .next/server/app/**
             - pipe: atlassian/ftp-deploy:0.3.1
               variables:
-                USERNAME: mindspothealthcare@mindspothealthcare.com
+                USER: mindspothealthcare@mindspothealthcare.com
                 PASSWORD: I3D0_HL58rqO
                 SERVER: ftp.mindspothealthcare.com
                 REMOTE_PATH: /
