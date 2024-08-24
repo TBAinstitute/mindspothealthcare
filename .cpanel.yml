@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mindspothealthca/mindspothealthcare/mindspothealthcare
+    - /bin/cp -R .next/standalone/* $DEPLOYPATH/
