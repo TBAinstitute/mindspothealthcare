@@ -60,6 +60,7 @@ pipelines:
             - echo "Deploying to production"
             - ls -l .next/server/app
             - ls -l .next/server/app/**
+            - ls -l .next/standalone
             - pipe: atlassian/ftp-deploy:0.3.1
               variables:
                 USER: mindspothealthcare@mindspothealthcare.com
