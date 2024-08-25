@@ -65,7 +65,7 @@ pipelines:
                 USER: mindspothealthcare@mindspothealthcare.com
                 PASSWORD: I3D0_HL58rqO
                 SERVER: ftp.mindspothealthcare.com
-                REMOTE_PATH: /
+                REMOTE_PATH: /public_html/nextjs_app
                 LOCAL_PATH: .next/standalone
                 MODE: "script"
                 COMMAND: "./ansible/deploy-dev.sh"
