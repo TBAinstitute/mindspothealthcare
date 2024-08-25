@@ -4,6 +4,10 @@ deployment:
     - export DEPLOYPATH='/home/mindspothealthca/public_html/nextjs_app'
     - echo "Starting deployment to $DEPLOYPATH"
     - mkdir -p $DEPLOYPATH
+    - echo "Copying files to $DEPLOYPATH"
+    - /bin/ls -la .next/standalone/
     - /bin/cp -R .next/standalone/* $DEPLOYPATH/
+    - echo "Listing files in $DEPLOYPATH"
+    - /bin/ls -la $DEPLOYPATH
     - echo "Deployment completed"
 
