@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build Next.js site
-        run: npm run build
+        run: npm run export
 
       - name: Verify build output
         run: |
@@ -51,5 +51,5 @@ jobs:
           port: 21
           username: mindspothealthcare@mindspothealthcare.com
           password: I3D0_HL58rqO
-          local-dir: ./
+          local-dir: out
           server-dir: ./
