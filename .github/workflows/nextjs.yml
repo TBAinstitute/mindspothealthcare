@@ -48,7 +48,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'mindspothealthcare@mindspothealthca.com'
-          server: 'ftpes://ftp.mindspothealthcare.com'
+          server: 'ftpes.mindspothealthcare.com'
           port: 22
           local_path: './'
           remote_path: '/'
