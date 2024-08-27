@@ -47,7 +47,7 @@ jobs:
       - name: Deploy to cPanel via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: 209.182.192.90
+          server: ftps://209.182.192.90
           port: 21
           username: mindspothealthcare@mindspothealthca.com
           password: wL9E$8^heOz#
