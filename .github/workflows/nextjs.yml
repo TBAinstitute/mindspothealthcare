@@ -48,9 +48,10 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'mindspothealthcare@mindspothealthca.com'
-          server: 'ftp.mindspothealthcare.com'
+          server: 'ftpes://ftp.mindspothealthcare.com'
           port: 22
           local_path: './'
           remote_path: '/'
           sftp_only: true
           password: ${{ secrets.FTP_PASSWORD }}
+          sftpArgs: '-vvv'
