@@ -44,12 +44,13 @@ jobs:
         with:
           name: nextjs-export
 
-      - name: Deploy to cPanel via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: Deploy to cPanel via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
-          server: ftp.mindspothealthcare.com
-          port: 21
-          username: mindspothealthcare@mindspothealthca.com
-          password: wL9E$8^heOz#
-          local-dir: ./
-          server-dir: ./
+          username: 'mindspothealthcare@mindspothealthca.com'
+          server: 'ftp.mindspothealthcare.com'
+          port: 22
+          local_path: './'
+          remote_path: '/'
+          sftp_only: true
+          password: ${{ secrets.FTP_PASSWORD }}
