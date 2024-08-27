@@ -107,7 +107,7 @@ jobs:
         with:
           server: 209.182.192.90
           port: 21
-          username: mindspothealthcare@mindspothealthcare.com
-          password: I3D0_HL58rqO
+          username: mindspothealthcare@mindspothealthca.com
+          password: ]eqtscrEhZ$T
           local-dir: ./
           server-dir: ./
