@@ -4,6 +4,7 @@
 const nextConfig = {
   output: 'standalone',
   output: 'export',
+  trailingSlash: true,
 };
 
 export default nextConfig;
