@@ -13,33 +13,38 @@ export default function Home() {
   const items = [
      {
       id: 1,
-      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      name:"Chinedu Mercy",
-      state:"Lagos, Nigeria"
+      Header: "Exceptional Care and Compassion",
+      quote: "Mindspot Health Care Services has been a blessing for our family. When my mother needed in-home care after her surgery, the caregivers were not only professional but also incredibly kind and compassionate. They treated her like family, which gave us peace of mind knowing she was in good hands. I can't thank them enough for their exceptional service."    , 
+      name:"— Sarah M. ",
+      state:"Baltimore, MD"
      },
      {
       id: 2,
-      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      name:"Chinedu Mercy",
-      state:"Lagos, Nigeria"
+      Header: "Reliable and Trustworthy Support",
+      quote:"After trying several home care agencies, we finally found Mindspot Health Care Services, and it’s been a game changer. The caregivers are reliable, always on time, and genuinely care about my father's well-being. The staff goes above and beyond to ensure that his needs are met, and they communicate with us every step of the way. I highly recommend them to anyone looking for trustworthy care.",
+      name:"— James L.",
+      state:"Annapolis, MD "
      },
      {
       id: 3,
-      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      name:"Chinedu Mercy",
-      state:"Lagos, Nigeria"
+      Header: "Personalized Care That Makes a Difference ",
+      quote:"What sets Mindspot Health Care Services apart is their dedication to personalized care. My aunt has Alzheimer's, and they took the time to understand her specific needs and created a care plan that truly supports her. The caregivers are patient, attentive, and have made a real difference in her quality of life. We're grateful for the peace of mind they’ve provided our family",
+      name:"— Karen T.",
+      state:" Rockville, MD "
      },
      {
       id: 4,
-      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      name:"Chinedu Mercy",
-      state:"Lagos, Nigeria"
+      Header: "Responsive and Attentive Service",
+      quote:"From the moment we contacted Mindspot Health Care Services, we knew we were in good hands. The team was responsive, attentive, and took the time to answer all our questions. The caregivers they provided for my uncle are wonderful—caring, skilled, and respectful. They’ve made it possible for him to stay in his home, where he’s happiest. We’re so grateful for their support",
+      name:"— Michael W.,",
+      state:"Silver Spring, MD"
      },
      {
       id: 5,
-      quote:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-      name:"Chinedu Mercy",
-      state:"Lagos, Nigeria"
+      Header: "A Lifesaver for Our Family ",
+      quote:"Mindspot Health Care Services has truly been a lifesaver for our family. Balancing work and taking care of my elderly mother was becoming overwhelming until we found them. Their caregivers are not only professional but also warm and caring. They’ve given my mother the companionship she needs, and the rest of us the relief we were desperately seeking. We couldn't be more thankful.",
+      name:"— Emily R.",
+      state:"Columbia, MD"
      },
     // Add more items
   ];
