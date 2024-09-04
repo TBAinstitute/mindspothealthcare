@@ -14,7 +14,7 @@ export const Hero = () => {
             Home Care Services
           </h2>
           <p>
-            At Mindspot Health Care Services, where compassion meets
+            At Mindspot Health Care Services, compassion meets
             expertise. We understand that home is where the heart is, and
             we're dedicated to helping you or your loved ones thrive in
             familiar surroundings.
