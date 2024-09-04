@@ -39,7 +39,7 @@ export const CommingSoon = () => {
                             <h2 className='md:text-[18px] text-[#736D6D]'>Home Care</h2>
                             <div className='gap-6 flex items-center'>
                                 <Image src={soon2} alt='img1' className='w-[23%] md:h-[130px] rounded-[10px]'  />
-                                <p className='md:text-[18px] leading-[28px] w-[70%]'>Get trusted source for practical tips, expert advice, and the latest insights in health and wellness. Empowering you to live a healthier, happier life.</p>
+                                <p className='md:text-[18px] leading-[28px] w-[70%]'>Explore our comprehensive resources on home care. From expert advice to practical tips, we provide everything you need to create a safe, comfortable, and nurturing environment at home.</p>
                             </div>
                             <span className='w-full h-[1px] bg-neutral'></span>
                     </div>
